@@ -1,3 +1,79 @@
+#28. Реализуйте "мини лотерею". Пусть компрьютер "задумает число", а пользователь его должен отгадать. В конце сообщив количество попыток.
+from random import *
+b=randint(1,10)
+a=int(input("Kakoe cislo? "))
+for i in range(1,10):
+    if a==b:
+        print("Pozdravlau, vi ugadali cislo!")
+    else:
+        int(input("Neverno, poprobuite ese raz. Kakoe cislo? "))
+
+
+
+print()
+print()
+print()
+#29. Напишите программу, печатающую столбик строк такого вида
+for g in range(0,10):
+    print("x")
+for j in range(1,10):
+    for i in range(1,10):
+        if i==j:
+            print("x",end=" ")
+        else:
+           print("0",end=" ")
+    print()
+
+
+
+
+print()
+print()
+print()
+#16. Напишите программу, печатающую столбик строк такого вида
+for j in range(1,10):
+    for i in range(1,10):
+        if i==j:
+            print(j,end=" ")
+        else:
+            print("0",end=" ")
+    print()
+
+
+
+print()
+print()
+print()
+#tablica 
+for j in range(1,10):
+    for i in range(1,10):
+        print(f"{(j*i):2}",end=" ")
+    print()
+
+
+
+print()
+print()
+print()
+#15. Написать программу, выводящую в столбик десять строк, в каждой печатая цифры от 0 до 9
+for j in range(0,10):
+    for i in range(0,10):
+        print(i,end=" ")
+    print(j)
+
+
+
+print()
+print()
+print()
+#17. Напишите программу, печатающую столбик таблицу умножения
+n=int(input("Kirjutage number: "))
+for i in range(1,10):
+    print(n,"*",i,"=",n*i)
+
+print()
+print()
+print()
 #купи слона
 a=input("Kupi slona! ")
 while a.title()!="Slon":
@@ -5,7 +81,9 @@ while a.title()!="Slon":
 print("Slon tvoi!")
 
 
-
+print()
+print()
+print()
 #7. Вывести на экран числа, кратные К из промежутка [А,В].
 k=int(input("Kirjutage number: "))
 
